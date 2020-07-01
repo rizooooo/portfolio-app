@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react';
+import { Alert, Container, Row, Col, H1, P } from '@bootstrap-styled/v4';
+import styled from 'styled-components';
+import Header from './components/Header';
+import avatar from './assets/img/avatar.svg';
+import IndexPage from './pages/IndexPage';
+import SkillsPage from './pages/SkillsPage';
+import ExperiencePage from './pages/ExperiencePage';
+import ProjectsPage from './pages/ProjectsPage';
+import RefContextProvider from './context/RefContext';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <RefContextProvider>
+      <React.Fragment>
+        <IndexPage />
+        <SkillsPage />
+        <ExperiencePage />
+        <ProjectsPage />
+      </React.Fragment>
+    </RefContextProvider>
+
   );
 }
 

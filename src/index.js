@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import BootstrapProvider from '@bootstrap-styled/provider';
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BootstrapProvider theme={{ '$brand-danger': 'green' }}>
     <App />
-  </React.StrictMode>,
+  </BootstrapProvider>,
   document.getElementById('root')
 );
 
