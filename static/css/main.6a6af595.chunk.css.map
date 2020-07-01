@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,QAAS,CACT,SACF,CAEA,KACE,sBACF,CAMA,0BACE,WACF","file":"main.6a6af595.chunk.css","sourcesContent":["body {\n  margin: 0;\n  padding: 0;\n}\n\nhtml {\n  scroll-behavior: smooth;\n}\n\nhtml, body, #root {\n  height: 100%;\n}\n\n#root>div {\n  height: 100%\n}\n"]}
